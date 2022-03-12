@@ -1,0 +1,350 @@
+/*1. Write a Java program to print 'Hello' on screen and then print your name on a 
+separate line. 
+Expected Output : 
+Hello
+Alexandra Abramov*/
+
+class Hello_name
+{
+public static void main(String[] args)
+{
+System.out.println("hello world");
+
+System.out.println("Raghavendra Joshi");
+
+}
+}
+
+------------------------------------------------------------------------------------------------------------
+
+/*2. Write a Java program to print the sum of two numbers. 
+Test Data: 74 + 36*/
+
+class sum
+{
+public static void main(String[] args)
+{
+int a = 74;
+int b = 36;
+int sum = a+b;
+System.out.println("sum of two numbers : "+sum);
+}
+}
+---------------------------------------------------------------------------------------------------------------
+/*3. Write a Java program to divide two numbers and print on the screen. 
+Test Data : 50/3*/
+
+class Division
+{
+public static void main(String[] args)
+{
+int a = 50;
+int b = 3;
+int divide = a/b;
+System.out.println("division of given number: "+divide);
+}
+}
+-----------------------------------------------------------------------------------------------------------------
+/*4. Write a Java program to print the result of the following operations. 
+Test Data: 
+a. -5 + 8 * 6
+b. (55+9) % 9
+c. 20 + -3*5 / 8
+d. 5 + 15 / 3 * 2 - 8 % 3
+Expected Output :
+43
+1
+19
+13*/
+
+class Expressions
+{
+public static void main(String[] args)
+{
+int a =(-5)+(8*6);
+int b = (55+9)%9;
+int c = 20+(-3*5)/8;
+int d = 5+15/3*2-8%3;
+System.out.println("answer of expression one is: "+a);
+System.out.println("answer of expression two is: "+b);
+System.out.println("answer of expression three is: "+c);
+System.out.println("answer of expression four is: "+d);
+}
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------
+/*5. Write a Java program that takes two numbers as input and display the product of 
+two numbers. 
+Test Data:
+Input first number: 25
+Input second number: 5
+Expected Output :
+25 x 5 = 125*/
+
+import java.util.Scanner;
+class Product
+{
+public static void main(String[] args)
+{
+	//a=25 &b=5
+System.out.println("value of a &b");
+Scanner num1 = new Scanner(System.in);
+int a = num1.nextInt();
+Scanner num2 = new Scanner(System.in);
+int b = num2.nextInt();
+int product = a*b;
+System.out.println("product: "+product);
+
+}
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+/*6. Write a Java program to print the sum (addition), multiply, subtract, divide and 
+remainder of two numbers. 
+Test Data:
+Input first number: 125
+Input second number: 24
+Expected Output :
+125 + 24 = 149
+125 - 24 = 101
+125 x 24 = 3000*/
+
+class arithmatic_oprations
+{
+public static void main(String[] args)
+{
+int num1 = 125;
+int num2 = 24;
+ //addition
+ int add = num1+num2;
+ System.out.println("Addition of given numbers is: "+add);
+ //subtract
+  int sub = num1-num2;
+ System.out.println("Subtractaction of given numbers is: "+sub);
+ //multy
+  int multy = num1*num2;
+ System.out.println("Multiplication of given numbers is: "+multy);
+ //divide
+  int divide = num1/num2;
+ System.out.println("Division of given numbers is: "+divide);
+ //mod
+  int mod = num1%num2;
+ System.out.println("reminder of given two numbers is: "+mod);
+}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+/* 7. Write a Java program that takes a number as input and prints its multiplication 
+table upto 10. 
+Test Data:
+Input a number: 8
+Expected Output :
+8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+...
+8 x 10 = 80 */
+
+import java.util.Scanner;
+class Table
+{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Input a Number: ");
+		int n1=sc.nextInt();
+		int i;
+		for(i=1;i<=10;i++){
+			System.out.println(n1+" * "+i+(n1*i));
+		}
+	}
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+/* 8. Write a Java program to display the following pattern. 
+Sample Pattern : */
+
+class pattern1
+{
+		public static void main(String args[])
+		{
+			System.out.println("    J    a   v      v  a    ");
+			System.out.println("    J   a a   v    v  a a    ");
+			System.out.println("J   J  aaaaa   v  v  aaaaa  ");
+			System.out.println(" JJ   a     a   v   a     a  ");
+			
+		}
+			
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+/* 9. Write a Java program to compute the specified expressions and print the output. 
+Test Data:
+((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))
+Expected Output
+2.138888888888889 */
+
+class Q9
+{
+public static void main(String[] args)
+{
+double a = ((25.5*3.5-3.5*3.5)/(40.5-4.5));
+System.out.println("answer: "+a);
+}
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+/* 10. Write a Java program to compute a specified formula. 
+Specified Formula :
+4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+Expected Output
+2.9760461760461765 */
+
+class Q10
+{
+public static void main(String[] args)
+{
+double a = 4.0*(1-(1.0/3)+(1.0/5)-(1.0/7)+(1.0/9)-(1.0/11));
+System.out.println("answer: "+a);
+}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+/* 11. Write a Java program to print the area and perimeter of a circle. 
+Test Data:
+Radius = 7.5
+a=πr^2
+P = 2πr
+Expected Output
+Perimeter is = 47.12388980384689
+Area is = 176.71458676442586 */
+
+class Circle
+{
+public static void main(String[] args)
+{
+double r = 7.5;
+double pi = 22.0/7.0;
+double poc = 2*pi*r;
+double area = pi*r*r;
+System.out.println("perimeter of circle is: "+poc);
+System.out.println("Area of circle is: "+area);
+}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+/* 12. Write a Java program that takes three numbers as input to calculate and print the 
+average of the numbers */
+
+
+import java.util.Scanner;
+
+class Average
+{
+    public static void main(String[] args)
+    {
+        System.out.println("enter values of a,b&c");
+        Scanner num = new Scanner(System.in);
+        int a = num.nextInt();
+        int b = num.nextInt();
+        int c = num.nextInt();
+        double average = a+b+c/3;
+        System.out.println("average of numbers is: "+average);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+/* 13. Write a Java program to print the area and perimeter of a rectangle. 
+Test Data:
+Width = 5.5 Height = 8.5
+Expected Output
+Area is 5.6 * 8.5 = 47.60
+Perimeter is 2 * (5.6 + 8.5) = 28.20 */
+
+class Circle
+{
+public static void main(String[] args)
+{
+double r = 7.5;
+double pi = 22.0/7.0;
+double poc = 2*pi*r;
+double area = pi*r*r;
+System.out.println("perimeter of circle is: "+poc);
+System.out.println("Area of circle is: "+area);
+}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+/* 14. Write a Java program to print an American flag on the screen. 
+Expected Output */
+
+
+class flag{
+	public static void main(String args[]){
+		System.out.println("* * * * * * ==================================");
+		System.out.println(" * * * * *  ==================================");
+		System.out.println("* * * * * * ==================================");
+		System.out.println(" * * * * *  ==================================");
+		System.out.println("* * * * * * ==================================");
+		System.out.println(" * * * * *  ==================================");
+		System.out.println("* * * * * * ==================================");
+		System.out.println(" * * * * *  ==================================");
+		System.out.println("* * * * * * ==================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");                                    
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+//15. Write a Java program to swap two variables.
+
+import java.util.Scanner;
+
+public class swap {
+    public static void main(String[] args) {
+        System.out.println("enter value of a & b");
+        Scanner num1 = new Scanner(System.in);
+                int a = num1.nextInt();
+        Scanner num2  = new Scanner(System.in);
+        int b = num2.nextInt();
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        System.out.println("the swap numbers are: "+a);
+        System.out.println("the swap numbers are: "+b);
+
+
+
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+/* 16. Write a Java program to print a face. 
+Expected Output */
+
+
+class Face
+    {
+    public static void main(String[] args)
+    {
+        System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+ ");
+    }
+	}
+	
+----------------------------------------------------------------------------------------------------------------------------------------
+
